@@ -1,8 +1,6 @@
-package com.bluesoft.openclosedprinciple.goodexample;
+package com.bluesoft.solid.openclosedprinciple.goodexample;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ClaimApprovalManagerTest {
 

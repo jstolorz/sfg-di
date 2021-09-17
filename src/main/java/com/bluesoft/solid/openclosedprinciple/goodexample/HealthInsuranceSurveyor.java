@@ -1,4 +1,4 @@
-package com.bluesoft.openclosedprinciple.goodexample;
+package com.bluesoft.solid.openclosedprinciple.goodexample;
 
 class HealthInsuranceSurveyor implements InsuranceSurveyor {
     @Override

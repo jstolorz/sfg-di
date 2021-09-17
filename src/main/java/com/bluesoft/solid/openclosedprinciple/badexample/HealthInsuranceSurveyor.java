@@ -1,4 +1,4 @@
-package com.bluesoft.openclosedprinciple.badexample;
+package com.bluesoft.solid.openclosedprinciple.badexample;
 
 public class HealthInsuranceSurveyor {
     public boolean isValidClain(){
