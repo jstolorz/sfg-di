@@ -1,6 +1,8 @@
 package com.bluesoft.sfgdi;
 
+import com.bluesoft.sfgdi.config.SfgConfiguration;
 import com.bluesoft.sfgdi.controllers.*;
+import com.bluesoft.sfgdi.datasource.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -36,6 +38,12 @@ public class SfgDiApplication {
 
         ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
         System.out.println(constructorInjectedController.getGreeting());
+
+        FakeDataSource fakeDataSource = (FakeDataSource)ctx.getBean("fakeDataSource");
+        System.out.println(fakeDataSource);
+
+        SfgConfiguration sfgConfiguration = (SfgConfiguration) ctx.getBean("sfgConfiguration");
+        System.out.println(sfgConfiguration);
     }
 
 }
